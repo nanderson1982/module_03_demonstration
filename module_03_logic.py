@@ -6,7 +6,7 @@ Usage: To execute, press the play button in the VSC IDE.
 """
 
 # Variables used in this demonstration:
-age = 8
+age = 18
 sibling_age = 9
 horizontal_position = -3
 vertical_position = -5
@@ -18,13 +18,12 @@ fruits = ["apple", "banana", "cherry"]
 # IF STATEMENT
 if age < 13:
     print("Child")
-elif age < 18:
+elif age < 18: # elif not mandatory
     print("Teenager")
 elif age <= 20:
     print("Young Adult")
 else:
     print("Adult")
-
 
 
 # NESTED CONDITIONALS
@@ -50,7 +49,7 @@ else:
 # >= greater than or equal. Returns True if first operand is greater than or equal to second, false otherwise.
 
 # Examples:
-
+"""
 first_operand = 5
 second_operand = 10
 print(first_operand == second_operand) # False
@@ -59,13 +58,13 @@ print(first_operand < second_operand) # True
 print(first_operand > second_operand) # False
 print(first_operand <= second_operand) # True
 print(first_operand >= second_operand) # False
-
+"""
 
 # LOGICAL OPERATORS
 if age > 0 and sibling_age > 0:
     print("Both values are greater than 0")
 
-if age > 9 and sibling_age > 9:
+if age > 9 or sibling_age > 9:
     print("At least one of them is greater than 9")
 
 if not age > 10:
@@ -92,7 +91,7 @@ print("banana" in fruits)
 print("orange" not in fruits)
 
 text = "Hello world!"
-print("World" in text)
+print("world" in text)
 
 searched_fruit = "banana"
 if searched_fruit in fruits:
